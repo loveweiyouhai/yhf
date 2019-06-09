@@ -36,6 +36,11 @@ class Controller extends YHF
         }else{
            echo  $filePath ."视图文件不存在";
         }
+    }
 
+    public function render($url)
+    {
+        header("Location:".$url);
+        exit;
     }
 }
