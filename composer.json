@@ -1,0 +1,16 @@
+{
+    "name": "mypc/hf",
+    "authors": [
+        {
+            "name": "weiyouhai",
+            "email": "weiyouhai2008@163.com"
+        }
+    ],
+    "require": {
+        "php":">=7.0",
+        "filp/whoops":"*",
+        "symfony/var-dumper": "*",
+        "catfan/medoo": "^1.6",
+        "twig/twig": "^2.11"
+    }
+}
