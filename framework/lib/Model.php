@@ -7,7 +7,12 @@
  */
 
 namespace framework\lib;
-use \PDO;
+
+/**
+ * Class Model
+ * @package framework\lib
+ *  模型基类
+ */
 
 
 class Model extends \Medoo\Medoo

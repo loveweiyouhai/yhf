@@ -8,6 +8,11 @@
 
 namespace framework\lib;
 
+/**
+ * Class Log
+ * @package framework\lib
+ * 日志驱动
+ */
 
 class Log
 {

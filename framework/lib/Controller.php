@@ -21,14 +21,7 @@ class Controller extends HF
 
     public function display($file)
     {
-//        $filePath = APP."/views/".$file.VIEWS_EXT;
-//        if(is_file($filePath)){
-//            if ($this->assign){
-//                extract($this->assign);
-//            }
-//
-//            include $filePath;
-//        }
+
         $fileArr = explode(".",$file);
         if ( is_array($fileArr) &&  count($fileArr)==2 && VIEWS_EXT == ".".$fileArr[1]){
             $filePath = APP."/views/".$file;

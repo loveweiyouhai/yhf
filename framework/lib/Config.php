@@ -8,6 +8,11 @@
 
 namespace framework\lib;
 
+/***
+ * Class Config
+ * @package framework\lib
+ * 配置加载类
+ */
 
 class Config
 {

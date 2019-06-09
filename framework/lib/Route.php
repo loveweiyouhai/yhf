@@ -8,6 +8,12 @@
 
 namespace framework\lib;
 
+/**
+ * Class Route
+ * @package framework\lib
+ * 路由处理类
+ */
+
 class Route
 {
     public  $controller;
