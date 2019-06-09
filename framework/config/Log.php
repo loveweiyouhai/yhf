@@ -9,6 +9,6 @@
 return array(
     "DRIVER"=>"file",
     "OPTION"=>[
-        'PATH'=> HF."/log"
+        'PATH'=> YHF."/log"
     ]
 );

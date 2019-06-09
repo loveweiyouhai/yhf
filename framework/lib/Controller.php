@@ -8,9 +8,10 @@
 
 namespace framework\lib;
 
-use framework\HF;
 
-class Controller extends HF
+use framework\YHF;
+
+class Controller extends YHF
 {
     public $assign;
 
@@ -21,7 +22,6 @@ class Controller extends HF
 
     public function display($file)
     {
-
         $fileArr = explode(".",$file);
         if ( is_array($fileArr) &&  count($fileArr)==2 && VIEWS_EXT == ".".$fileArr[1]){
             $filePath = APP."/views/".$file;
@@ -29,17 +29,13 @@ class Controller extends HF
             $filePath = APP."/views/".$file. VIEWS_EXT;
         }
         if(is_file($filePath)){
-            $loader = new \Twig\Loader\FilesystemLoader(APP."/views/");
-            $twig = new \Twig\Environment($loader, [
-                'cache' => HF."/logs/view",
-                'debug'=>DEBUG
-            ]);
-            $template = $twig->load('index.html');
-            $template->display($this->assign ? $this->assign:'');
+            if ($this->assign){
+                extract($this->assign);
+            }
+            include $filePath;
         }else{
            echo  $filePath ."视图文件不存在";
         }
-
 
     }
 }

@@ -27,12 +27,12 @@ class IndexController extends Controller
         //$this->assign("bb","bb");
         $this->assign("list",$list);
         $this->assign("count",$count);
-        $this->display("index.html");
+        $this->display("index");
     }
 
     public function test()
-    {
-        $this->assign("count","test");
+    {$this->assign("count","test");
+
         $this->display("test");
     }
 }

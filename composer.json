@@ -10,7 +10,6 @@
         "php":">=7.0",
         "filp/whoops":"*",
         "symfony/var-dumper": "*",
-        "catfan/medoo": "^1.6",
-        "twig/twig": "^2.11"
+        "catfan/medoo": "^1.6"
     }
 }

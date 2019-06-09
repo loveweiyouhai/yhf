@@ -7,15 +7,15 @@
  */
 
 
-define("HF",realpath("../"));
-define("CORE",HF."/framework");
-define("APP",HF."/application");
+define("YHF",realpath("../"));
+define("CORE",YHF."/framework");
+define("APP",YHF."/application");
 define("MODULE","application");
 define("CONTROLLER_PATH","controller"); //控制器存放的目录
 define("CONTROLLER_SUFFIX","controller");//控制器后缀
-define("VIEWS_EXT",".html");//控制器后缀,默认是.html
+define("VIEWS_EXT",".php");//控制器后缀,默认是.php
 
-include HF."/vendor/autoload.php";
+include YHF."/vendor/autoload.php";
 
 if(DEBUG){
     $whoops = new \Whoops\Run;
@@ -33,10 +33,10 @@ include CORE."/common/common.php";
 include CORE."/common/function.php";
 
 //引入核心文件
-include CORE."/HF.php";
+include CORE."/YHF.php";
 
 //在找不到类的时候自动执行某个方法
-spl_autoload_register('\framework\HF::load');
+spl_autoload_register('\framework\YHF::load');
 
 //启动框架
-\framework\HF::run();
+\framework\YHF::run();
