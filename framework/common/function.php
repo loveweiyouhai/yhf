@@ -60,3 +60,20 @@ function I($name, $default = false, $filter = false){
         return $default;
     }
 }
+
+
+/***
+ * @param $val
+ * @return mixed
+ * @introduction 根据配置的语言包显示语言
+ */
+function L($val){
+
+    $langPath = defined('LANG') ?  (APP . "/lang/".LANG.".php") : (APP . "/lang/CHN.php");
+    if(is_file($langPath)){
+        $langArr = include $langPath;
+        return $langArr[$val];
+    }else{
+        echo  $langPath ."语言包文件不存在"; exit;
+    }
+}

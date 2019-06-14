@@ -11,5 +11,6 @@
  */
 
 define('DEBUG',true);
+define('LANG','CHN');
 
 include "../framework/index.php";

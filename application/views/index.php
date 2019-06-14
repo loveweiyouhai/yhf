@@ -27,7 +27,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">yhf</a>
+            <a class="navbar-brand" href="#"><?php echo L('title') ?></a>
         </div>
 
     </div>
@@ -37,6 +37,7 @@
         <h1>welcome to yhf！</h1>
         <p> This is a simple php framework</p>
     </div>
+
 </div>
 
 
