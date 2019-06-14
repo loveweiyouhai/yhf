@@ -7,6 +7,7 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>yhf</title>
 
+    <link href="<?php echo CSS_PATH ?>/app.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,7 +33,7 @@
 
     </div>
 </nav>
-<div class="container">
+<div class="container main">
     <div class="jumbotron">
         <h1>welcome to yhf！</h1>
         <p> This is a simple php framework</p>

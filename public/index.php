@@ -11,6 +11,7 @@
  */
 
 define('DEBUG',true);
-define('LANG','CHN');
+define('LANG','ENG');
+define('CSS_PATH','./asset/');
 
 include "../framework/index.php";

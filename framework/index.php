@@ -15,7 +15,7 @@ define("CONTROLLER_PATH","controller"); //控制器存放的目录
 define("CONTROLLER_SUFFIX","controller");//控制器后缀
 define("VIEWS_EXT",".php");//控制器后缀,默认是.php
 
-include YHF."/vendor/autoload.php";
+include YHF."/vendor/autoload.php"; // 加载 composer安装的库
 
 if(DEBUG){
     $whoops = new \Whoops\Run;
