@@ -2,4 +2,4 @@
 ## ignore
 .idea
 /logs
-/public/asset/weui
+/public/asset/weui/
