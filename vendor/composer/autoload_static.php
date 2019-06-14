@@ -22,6 +22,7 @@ class ComposerStaticInit662d16f8b19c0801ccb71c439bbb3849
             'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Symfony\\Component\\Finder\\' => 25,
         ),
         'P' => 
         array (
@@ -30,6 +31,10 @@ class ComposerStaticInit662d16f8b19c0801ccb71c439bbb3849
         'M' => 
         array (
             'Medoo\\' => 6,
+        ),
+        'G' => 
+        array (
+            'Gregwar\\' => 8,
         ),
     );
 
@@ -50,6 +55,10 @@ class ComposerStaticInit662d16f8b19c0801ccb71c439bbb3849
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -57,6 +66,10 @@ class ComposerStaticInit662d16f8b19c0801ccb71c439bbb3849
         'Medoo\\' => 
         array (
             0 => __DIR__ . '/..' . '/catfan/medoo/src',
+        ),
+        'Gregwar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gregwar/captcha/src/Gregwar',
         ),
     );
 

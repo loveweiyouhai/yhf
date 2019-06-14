@@ -10,6 +10,7 @@
         "php":">=7.0",
         "filp/whoops":"*",
         "symfony/var-dumper": "*",
-        "catfan/medoo": "^1.6"
+        "catfan/medoo": "^1.6",
+        "gregwar/captcha": "^1.1"
     }
 }

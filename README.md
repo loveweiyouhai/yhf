@@ -2,3 +2,4 @@
 
 1. 使用composer管理类库的方式
 2. 数据库操作使用Medoo类库,具体的数据库操作参考官网 https://medoo.in/
+3. 支持验证码gregwar/captcha
