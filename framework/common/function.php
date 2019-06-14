@@ -74,6 +74,6 @@ function L($val){
         $langArr = include $langPath;
         return $langArr[$val];
     }else{
-        echo  $langPath ."语言包文件不存在"; exit;
+        throw new \Exception("语言包文件不存在".$langPath);
     }
 }

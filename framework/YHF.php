@@ -41,7 +41,9 @@ class YHF
             //调用控制器方法
             $controller->$methodName();
         }else{
-            throw new \Exception("找不到控制器".$controllerName.CONTROLLER_SUFFIX);
+            if('favicon.ico' != $controllerName){
+                throw new \Exception("找不到控制器".$controllerName.CONTROLLER_SUFFIX);
+            }
         }
 
         //$end_time = microtime(true);

@@ -20,7 +20,6 @@ class Route
     public  $action;
     public function __construct()
     {
-
         //获取URL的控制器和方法
         if( isset($_SERVER['REQUEST_URI']) && $_SERVER['REQUEST_URI'] != "/"){
             $path = $_SERVER['REQUEST_URI'];

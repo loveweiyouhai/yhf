@@ -12,6 +12,7 @@
 
 define('DEBUG',true);
 define('LANG','ENG');
-define('CSS_PATH','./asset/');
+define('WEBSITE','http://yhf.com');
+define('CSS_PATH',WEBSITE.'/asset/');
 
 include "../framework/index.php";

@@ -12,7 +12,7 @@ define("CORE",YHF."/framework");
 define("APP",YHF."/application");
 define("MODULE","application");
 define("CONTROLLER_PATH","controller"); //控制器存放的目录
-define("CONTROLLER_SUFFIX","controller");//控制器后缀
+define("CONTROLLER_SUFFIX","Controller");//控制器后缀
 define("VIEWS_EXT",".php");//控制器后缀,默认是.php
 
 include YHF."/vendor/autoload.php"; // 加载 composer安装的库
