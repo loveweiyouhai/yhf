@@ -34,7 +34,7 @@ class Controller extends YHF
             }
             include $filePath;
         }else{
-           echo  $filePath ."视图文件不存在";
+            throw new \Exception($filePath ."视图文件不存在");
         }
     }
 

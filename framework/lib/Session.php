@@ -8,12 +8,11 @@
 
 namespace framework\lib;
 
-
 class Session
 {
     public function __construct()
     {
-        session_start();
+        @session_start();
     }
 
     static function set($name, $value)
